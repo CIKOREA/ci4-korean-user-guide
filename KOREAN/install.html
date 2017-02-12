@@ -1,0 +1,487 @@
+﻿<html class="no-js" lang="ko" dir="ltr"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+  
+  <title>설치 - CodeIgniter4 4.0.0-dev에 설명서</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="https://bcit-ci.github.io/CodeIgniter4/_static/ci-icon.ico"></link>
+  
+
+  
+  <link href="asset?aid=0" rel="stylesheet" type="text/css"></link>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="asset?aid=1" type="text/css"></link>
+  
+
+  
+    <link rel="top" title="CodeIgniter4 4.0.0-dev documentation" href="https://bcit-ci.github.io/CodeIgniter4/index.html"></link>
+        <link rel="next" title="Downloading CodeIgniter" href="https://bcit-ci.github.io/CodeIgniter4/installation/downloads.html"></link>
+        <link rel="prev" title="PSR Compliance" href="https://bcit-ci.github.io/CodeIgniter4/intro/psr.html"></link> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" dir="ltr" role="document">
+
+  <div id="nav">
+  <div id="nav_inner">
+    
+    
+    
+      <div id="pulldown-menu" class="ciNav">
+        <ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/index.html">CodeIgniter4에 오신 것을 환영합니다</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/index.html">CodeIgniter4에 오신 것을 환영합니다</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/requirements.html">서버 요구 사항</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/credits.html">크레딧 </a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/psr.html">PSR 준수</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/index.html">
+설치</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/downloads.html">CodeIgniter 다운로드</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/index.html">
+설치</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/upgrading.html">이전 버전에서 업그레이드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/troubleshooting.html">문제해결</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/local_server.html">로컬 개발 서버</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/index.html">튜토리얼</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/static_pages.html">정적 페이지</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/news_section.html">뉴스 섹션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/create_news_items.html">뉴스 항목 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/conclusion.html">마무리 </a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/index.html">CodeIgniter4 개요</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/structure.html">응용 프로그램 구조</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/mvc.html">모델, 뷰, 컨트롤러</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/autoloader.html">자동 로딩 파일</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/services.html">서비스 </a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/http.html">HTTP 요청 처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/security.html">보안 지침</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/index.html">일반 항목</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/configuration.html">환경설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/urls.html">URL처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/controllers.html">컨트롤러</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/views.html">보기 </a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/view_cells.html">뷰 셀</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/view_renderer.html">뷰 렌더러</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/view_parser.html">뷰 파서</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/helpers.html">각종 도우미함수들(Helper)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/core_classes.html">코어 시스템 클래스 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/hooks.html">후크 - 프레임 워크 코어 확장</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/common_functions.html">전역 함수 및 상수</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/routing.html">URI 라우팅</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/filters.html">컨트롤러 필터</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/logging.html">로그인 정보</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/errors.html">오류 처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/debugging.html">응용 프로그램을 디버깅</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/caching.html">웹 페이지 캐싱</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/cli.html">CLI사용하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/cli_commands.html">사용자 정의 CLI 명령</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/modules.html">코드 모듈</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/managing_apps.html">어플리케이션 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/environments.html">여러 환경 처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/alternative_php.html">뷰파일용  PHP 문법</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/testing.html">Testing (테스팅)</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/index.html">라이브러리</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/api_responses.html">API 응답 특성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/benchmark.html">벤치마킹</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/caching.html">캐싱 드라이버</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/cli.html">CLI 라이브러리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/content_negotiation.html">컨텐츠 협상</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/localization.html">현지화</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/curlrequest.html">CURLRequest 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/incomingrequest.html">IncomingRequest 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/message.html">HTTP 응답</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/pagination.html">쪽수 매기기(Pagenation)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/request.html">HTTP요청 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/response.html">HTTP 응답</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/security.html">보안 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/sessions.html">세션 라이브러리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/throttler.html">요청횟수제한기능</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/typography.html">서체</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/uploaded_files.html">파일 업로드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/uri.html">URI처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/validation.html">유효성 검사</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/index.html">데이터베이스 참조</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/examples.html">빠른 시작 : 사용 예</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/configuration.html">데이터베이스 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/connecting.html">데이터베이스에 연결</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/queries.html">쿼리 실행</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/results.html">쿼리하여 결과 가져오기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/helpers.html">쿼리 도우미 기능</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/query_builder.html">쿼리 빌더 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/transactions.html">트랜잭션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/metadata.html">메타 데이터참조</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/call_function.html">사용자 정의 함수 호출</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/model.html">CodeIgniter의 모델을 사용법</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/forge.html">데이터베이스 포지와 데이터베이스 조작</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/migration.html">Database Migrations (DB 마이그레이션)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/seeds.html">데이터베이스 시드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/hooks.html">데이터베이스 후크</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/index.html">도우미</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/cookie_helper.html">쿠키 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/filesystem_helper.html">파일 시스템 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/form_helper.html">폼 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/html_helper.html">HTML 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/inflector_helper.html">영문자 도우미(Inflector helper)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/number_helper.html">숫자 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/text_helper.html">텍스트 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/url_helper.html">URL 도우미</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/index.html">CodeIgniter프로젝트에 참여하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/guidelines.html">가이드 라인</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/workflow.html">진행순서</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/signing.html">기부 서명</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/roadmap.html">CodeIgniter4 로드맵</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/internals.html">CodeIgniter의 내부 구조 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/documentation.html">CodeIgniter의 문서 작성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/styleguide.html">PHP 스타일 가이드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/DCO.html">원래 1.1의 개발자 인증서</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    
+      
+  </div>
+</div>
+<div id="nav2">
+  <a href="https://bcit-ci.github.io/CodeIgniter4/installation/index.html#" id="openToc">
+    <img src="javascript:void(0);" title="내용의 전환 표" alt="내용의 전환 표">
+  </a>
+</div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav class="wy-nav-side" data-toggle="wy-nav-shift">
+      <div class="wy-side-nav-search">
+        
+          <a href="https://bcit-ci.github.io/CodeIgniter4/index.html" class="fa fa-home"> CodeIgniter4</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" aria-label="메인 탐색" data-spy="affix" role="navigation">
+        
+          
+          
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/index.html">CodeIgniter4에 오신 것을 환영합니다</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/index.html">CodeIgniter4에 오신 것을 환영합니다</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/requirements.html">서버 요구 사항</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/credits.html">크레딧 </a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/psr.html">PSR 준수</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/index.html">
+설치</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/downloads.html">CodeIgniter 다운로드</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/index.html">
+설치</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/upgrading.html">이전 버전에서 업그레이드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/troubleshooting.html">문제해결</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/installation/local_server.html">로컬 개발 서버</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/index.html">튜토리얼</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/static_pages.html">정적 페이지</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/news_section.html">뉴스 섹션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/create_news_items.html">뉴스 항목 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/tutorial/conclusion.html">마무리 </a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/index.html">CodeIgniter4 개요</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/structure.html">응용 프로그램 구조</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/mvc.html">모델, 뷰, 컨트롤러</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/autoloader.html">자동 로딩 파일</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/services.html">서비스 </a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/http.html">HTTP 요청 처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/concepts/security.html">보안 지침</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/index.html">일반 항목</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/configuration.html">환경설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/urls.html">URL처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/controllers.html">컨트롤러</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/views.html">보기 </a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/view_cells.html">뷰 셀</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/view_renderer.html">뷰 렌더러</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/view_parser.html">뷰 파서</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/helpers.html">각종 도우미함수들(Helper)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/core_classes.html">코어 시스템 클래스 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/hooks.html">후크 - 프레임 워크 코어 확장</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/common_functions.html">전역 함수 및 상수</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/routing.html">URI 라우팅</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/filters.html">컨트롤러 필터</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/logging.html">로그인 정보</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/errors.html">오류 처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/debugging.html">응용 프로그램을 디버깅</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/caching.html">웹 페이지 캐싱</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/cli.html">CLI사용하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/cli_commands.html">사용자 정의 CLI 명령</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/modules.html">코드 모듈</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/managing_apps.html">어플리케이션 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/environments.html">여러 환경 처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/alternative_php.html">뷰파일용  PHP 문법</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/general/testing.html">Testing (테스팅)</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/index.html">라이브러리</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/api_responses.html">API 응답 특성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/benchmark.html">벤치마킹</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/caching.html">캐싱 드라이버</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/cli.html">CLI 라이브러리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/content_negotiation.html">컨텐츠 협상</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/localization.html">현지화</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/curlrequest.html">CURLRequest 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/incomingrequest.html">IncomingRequest 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/message.html">HTTP 응답</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/pagination.html">쪽수 매기기(Pagenation)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/request.html">HTTP요청 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/response.html">HTTP 응답</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/security.html">보안 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/sessions.html">세션 라이브러리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/throttler.html">요청횟수제한기능</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/typography.html">서체</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/uploaded_files.html">파일 업로드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/uri.html">URI처리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/validation.html">유효성 검사</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/index.html">데이터베이스 참조</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/examples.html">빠른 시작 : 사용 예</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/configuration.html">데이터베이스 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/connecting.html">데이터베이스에 연결</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/queries.html">쿼리 실행</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/results.html">쿼리하여 결과 가져오기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/helpers.html">쿼리 도우미 기능</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/query_builder.html">쿼리 빌더 클래스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/transactions.html">트랜잭션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/metadata.html">메타 데이터참조</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/call_function.html">사용자 정의 함수 호출</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/model.html">CodeIgniter의 모델을 사용법</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/forge.html">데이터베이스 포지와 데이터베이스 조작</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/migration.html">Database Migrations (DB 마이그레이션)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/seeds.html">데이터베이스 시드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/database/hooks.html">데이터베이스 후크</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/index.html">도우미</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/cookie_helper.html">쿠키 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/filesystem_helper.html">파일 시스템 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/form_helper.html">폼 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/html_helper.html">HTML 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/inflector_helper.html">영문자 도우미(Inflector helper)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/number_helper.html">숫자 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/text_helper.html">텍스트 도우미</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/helpers/url_helper.html">URL 도우미</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/index.html">CodeIgniter프로젝트에 참여하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/guidelines.html">가이드 라인</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/workflow.html">진행순서</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/signing.html">기부 서명</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/roadmap.html">CodeIgniter4 로드맵</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/internals.html">CodeIgniter의 내부 구조 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/documentation.html">CodeIgniter의 문서 작성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/contributing/styleguide.html">PHP 스타일 가이드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/DCO.html">원래 1.1의 개발자 인증서</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+       
+    </nav>
+
+    <section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+
+      
+      <nav class="wy-nav-top" aria-label="상단의 탐색" role="navigation">
+        <i class="fa fa-bars" data-toggle="wy-nav-top"></i> <a href="https://bcit-ci.github.io/CodeIgniter4/index.html">CodeIgniter4</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div aria-label="이동 경로 탐색" role="navigation">
+  <ul class="wy-breadcrumbs">
+    <li>문서</li>
+      
+    <li>
+설치</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+    <div id="closeMe" style="float:right;margin-left:5px">
+      <img title="클래식 레이아웃" alt="고전적인 레이아웃" src="javascript:void(0);">
+    </div>
+  </ul>
+  <hr>
+</div>
+          <div class="document" role="main">
+            
+  <div class="section" id="installation">
+<h1>
+설치</h1>
+<p>CodeIgniter4는 직접 설치하거나, 컴포저를 이용하여 설치할 수 있습니다.</p>
+<div class="section" id="manual-installation">
+<h2><a class="headerlink" title="이 헤드 라인에 퍼머" href="https://bcit-ci.github.io/CodeIgniter4/installation/index.html#manual-installation"></a>10.2.1 직접 설치</h2>
+<p>CodeIgniter설치 단계</p>
+<ol class="arabic simple">
+<li>패키지의 압축을 풉니 다.</li>
+<li>서버에 CodeIgniter 폴더 및 파일을 업로드합니다. <strong>index.php</strong> 파일은 프로젝트 루트 내부의 <strong>public</strong> 폴더에있을 것입니다.</li>
+<li>텍스트 편집기를 사용하여 <strong>application/Config/App.php</strong>파일을 열고 기본 URL을 설정합니다. 암호화나 세션을 사용하려면  암호화 키를 설정해야 합니다.</li>
+<li>데이터베이스를 사용하려는 경우, 텍스트 편집기를 사용하여 <strong>application/Config/Database.php</strong> 파일을 열고 데이터베이스정보를 설정합니다.</li>
+</ol>
+<p>보안 강화를 위해 Codeigniter의 system 및 application 디렉토리를 다른이름으로 변경할 수 있습니다. 이 경우 반드시 <em>index.php</em> 에서<tt class="docutils literal"><span class="pre">$ system_directory</span></tt> 와 <tt class="docutils literal"><span class="pre">$ application_directory</span></tt> 변수를 그에 맞게 설정해야 합니다.</p>
+<p>여기에서 한발 더 나아가, 아예 해당 디렉토리들을 웹사이트 루트 보다 상위로 옮길 수 있습니다. 그러면 브라우저를 통한 직접 접근이 불가능 해 집니다. 기본적으로 직접 액세스를 방지하기 위해<strong>.htaccess</strong> 파일이  각 디렉토리에 포함되어 있지만 웹 서버의 설정에서 .htaccess 가 동작하지 않도록 할 수도 있으므로, 디렉토리를 아에 웹에서 접근할 수 없는 위치에 두는것이 가장 안전합니다.</p>
+<p>이렇게 한후에 뷰 파일을 public에 두고 싶다면 view 디렉토리만 application에서 빼낼 수 있습니다.  그런다음에는 반드시 index.php파일을 열어 $view_folder변수를 설정해 주어야 합니다. 전체적으로 $system_path, $application_folder, $view_folder등 3가지 변수를 설정하게 되는 것이지요. 그리고 경로는 ‘/www/MyUser/system'와 같이 전체 경로를 적어주는것이 좋습니다.</p>
+<p>실제 배포 환경에서는 반드시 PHP error reporting 등 개발시에만 필요한 것들을 비활성화 하는것도 중요합니다. CodeIgniter에서는  <tt class="docutils literal"><span class="pre">ENVIRONMENT</span></tt> 상수를 설정하면 됩니다. 보다 자세한 정보는  <a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/libraries/security.html"><em>보안 페이지</em></a>를 참조하세요 .</p>
+<p>오예!</p>
+<p>CodeIgniter를 처음 접하신다면 <a class="reference internal" href="https://bcit-ci.github.io/CodeIgniter4/intro/index.html"><em>시작하기</em></a> 를 먼저 참조하세요.  오예!</p>
+</div>
+<div class="section" id="composer-installation">
+<h2>컴포저 설치 <a class="headerlink" title="이 헤드 라인에 퍼머" href="https://bcit-ci.github.io/CodeIgniter4/installation/index.html#composer-installation">¶</a></h2>
+<p>보완 예정</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" aria-label="바닥 글 탐색" role="navigation">
+      
+        이전/다음
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>
+        © 저작권 2,014에서 2,017 사이, 기술의 브리티시 컬럼비아 대학.
+       마지막 2017년 1월 3일에 업데이트되었습니다.
+    </p>
+  </div>
+
+  함께 내장 <a href="http://sphinx-doc.org/">스핑크스가</a> 사용하여 <a href="https://github.com/snide/sphinx_rtd_theme">테마</a> 에 의해 제공 <a href="https://readthedocs.org">읽으 문서를</a> .
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'4.0.0-dev',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  false
+        };
+    </script>
+      <script type="text/javascript" src="https://bcit-ci.github.io/CodeIgniter4/_static/jquery.js"></script>
+      <script type="text/javascript" src="https://bcit-ci.github.io/CodeIgniter4/_static/underscore.js"></script>
+      <script type="text/javascript" src="https://bcit-ci.github.io/CodeIgniter4/_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="https://bcit-ci.github.io/CodeIgniter4/_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
